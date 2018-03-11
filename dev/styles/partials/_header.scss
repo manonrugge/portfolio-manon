@@ -1,0 +1,29 @@
+header {
+	background-color: $background;
+	height: 100vh;
+}
+
+.header-intro {
+	padding: 150px 0px;
+	width: 80%;
+    h3 {
+        padding-left: 100px;
+		@media (max-width: 960px){
+			padding-left: 0;
+			font-size: 30px;
+		}
+	}
+}
+
+.seeMore-button {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translate(-85%, -50%);
+    button {
+        border: none;
+        background: none;
+    }
+}

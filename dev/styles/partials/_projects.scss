@@ -1,0 +1,154 @@
+.toggle-portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    h4 {
+        margin: 0;
+        padding: 0px 20px;
+        &:last-child {
+            margin-right: 0;
+            border-left: 1px solid black;
+        }
+    }
+}
+
+
+// all project item styling goes here
+
+.projects {
+    display: flex;
+    flex-direction: column;   
+}
+
+.project-item {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    overflow: hidden;
+    @media (max-width: 960px){
+        margin-top: 50px;
+        flex-direction: column;
+	}
+    .projectImg {
+        width: 100%;
+        display: block;
+        padding-right: 50px;
+        -webkit-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+        -webkit-transform: scale3d(1, 1, 1);
+         transform: scale3d(1, 1, 1);
+    }
+
+
+    .project-img, 
+    .project-info {
+        width: 50%;
+        @media (max-width: 960px){
+            width: 95%;
+	    }
+    }
+
+    .project-info {
+        padding-left: 50px;
+        @media (max-width: 960px){
+            padding-left: 0;
+            margin: 50px 0px;
+	    }
+    }
+    
+    ul {
+        padding: 0;
+        margin-top: 25px;
+        li {
+            padding: 0px 20px 0px 0px;
+            font-size: 14px;
+        }
+    }
+    
+    .project-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 50px 0px 0px 50px;
+        position: relative;
+        a {
+
+            margin-top: 20px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+
+
+.right {
+    @media (max-width: 960px){
+        flex-direction: column-reverse; 
+	}
+    img {
+        padding: 0px 0px 0px 50px;
+        @media (max-width: 960px){
+            padding: 0;
+            width: 95%;
+	    }
+    }
+    .project-info {
+        padding: 0px 50px 0px 100px;
+        @media (max-width: 960px){
+            padding: 0;
+            width: 95%;
+	    }
+    }
+    
+}
+
+.arrow {
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    padding: 0;
+    top: -10px;
+    position: absolute;
+    left: 0px;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.arrow-text {
+    background-color: #fff;
+    position: relative;
+    z-index: 20;
+}
+
+
+.hoverOn {
+    .projectImg{
+        -webkit-transform: scale3d(1.05, 1.05, 1);
+        transform: scale3d(1.05, 1.05, 1);
+    }
+
+    .arrow{
+        opacity: 1;
+        left: -50px;
+    }
+}
+
+
+.hidden {
+    display: none;
+}
+
+.graphic{
+    border: 10px solid #ff00ff;
+}
+
+.disabled {
+    background-color: red;
+    // cursor: not-allowed;
+    pointer-events: none;
+}

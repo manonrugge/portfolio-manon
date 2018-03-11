@@ -1,0 +1,51 @@
+$primary: #fff;
+$secondary: #141178;
+$background: #f6f3e5;
+$heading: 'Merriweather Sans', sans-serif;
+$body: 'Merriweather Sans', sans-serif;
+
+.wrapper {
+	max-width: 900px;
+	margin: 0 auto;
+	@media (max-width: 960px){
+        width: 90%;
+	}
+// 	@media (max-width: 480px){
+//         width: 95%;
+//     }
+}
+
+body {
+	font-family: $heading;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 80px;
+	margin: 0px 0px 50px 0px;
+	line-height: 100px;
+}
+
+h3 {
+	font-size: 40px;
+	margin-top: 0;
+}
+
+h4 {
+	font-size: 15px;
+}
+
+p {
+	line-height: 30px;
+}
+
+@import "partials/setup.scss";
+@import "partials/nav.scss";
+@import "partials/header.scss";
+@import "partials/projects.scss";
+@import "partials/about.scss";
+@import "partials/slider.scss";
+@import "partials/footer.scss";

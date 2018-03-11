@@ -1,0 +1,48 @@
+.about {
+    background-color: $background;
+}
+
+.about-content {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    @media (max-width: 760px){
+        flex-direction: column;
+	}
+    .about-img {
+        width: 40%;
+        margin-top: -50px;
+        @media (max-width: 760px) {
+            width: 90%;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .about-text {
+        width: 60%;
+        padding: 100px 0px;
+        @media (max-width: 760px){
+            flex-direction: column;
+            padding: 20px 0px;
+            width: 90%;
+	    }
+        h2 {
+            margin-left: -50px;
+            @media (max-width: 760px) {
+                margin-left: 0px;
+                margin-bottom: 0px;
+                font-size: 40px;
+                line-height: 60px;
+	        }
+        }
+        p {
+            padding-left: 50px;
+            @media (max-width: 760px) {
+                padding-left: 0px;
+	        }
+        }
+    }  
+}
