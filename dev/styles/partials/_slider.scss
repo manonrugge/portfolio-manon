@@ -5,6 +5,10 @@
 .main-carousel {
   background: #FAFAFA;
   width: 100%;
+  @media (max-width: 480px){
+      width: 75%;
+      margin: 0 auto;
+    }
 }
 
 .carousel-cell {
@@ -43,6 +47,7 @@
 /* arrow color */
 .flickity-prev-next-button .arrow {
   fill: black;
+  z-index: 999;
 }
 
 /* position outside */

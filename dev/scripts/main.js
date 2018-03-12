@@ -73,8 +73,8 @@ myPortfolio.events = function () {
     const $mainCarousel = $('.main-carousel').flickity({
         // initialIndex: 2,
         cellAlign: 'left',
-        wrapAround: true
-        // autoPlay: 1500
+        wrapAround: true,
+        autoPlay: 1500
     });
 }
 

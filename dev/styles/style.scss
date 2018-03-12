@@ -1,8 +1,9 @@
 $primary: #fff;
-$secondary: #141178;
-$background: #f6f3e5;
-$heading: 'Merriweather Sans', sans-serif;
-$body: 'Merriweather Sans', sans-serif;
+$secondary: black;
+$blue: rgba(19, 82, 162, 1);
+$background: rgba(255, 212, 100, 1);
+$heading: 'Apercu', sans-serif;
+$body: 'Apercu', sans-serif;
 
 .wrapper {
 	max-width: 900px;
@@ -27,11 +28,13 @@ h2 {
 	font-size: 80px;
 	margin: 0px 0px 50px 0px;
 	line-height: 100px;
+	
 }
 
 h3 {
 	font-size: 40px;
 	margin-top: 0;
+	color: $secondary;
 }
 
 h4 {
