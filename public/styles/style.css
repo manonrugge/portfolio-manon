@@ -6,7 +6,7 @@
       width: 90%; } }
 
 body {
-  font-family: "Apercu", sans-serif; }
+  font-family: "apercu-regular", sans-serif; }
 
 a {
   text-decoration: none; }
@@ -562,3 +562,10 @@ header {
   border-top: 2px solid black;
   padding-top: 20px;
   line-height: 25px; }
+
+@font-face {
+  font-family: 'apercu-regular';
+  src: url("../fonts/apercu-regular.eot");
+  src: url("../fonts/apercu-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu-regular.woff") format("woff"), url("../fonts/apercu-regular.woff2") format("woff2"), url("../fonts/apercu-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }

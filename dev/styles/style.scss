@@ -2,7 +2,8 @@ $primary: #fff;
 $secondary: #000;
 $blue: rgba(19, 82, 162, 1);
 $background: rgba(255, 212, 100, 1);
-$font: 'Apercu', sans-serif;
+$font: 'apercu-regular', sans-serif;
+
 
 
 .wrapper {
@@ -65,3 +66,15 @@ p {
 @import "partials/about.scss";
 @import "partials/slider.scss";
 @import "partials/contact.scss";
+
+@font-face {
+    font-family: 'apercu-regular';
+    src: url('../fonts/apercu-regular.eot');
+    src: url('../fonts/apercu-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/apercu-regular.woff') format('woff'),
+         url('../fonts/apercu-regular.woff2') format('woff2'),
+         url('../fonts/apercu-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
