@@ -19,11 +19,15 @@
     .projectImg {
         width: 100%;
         display: block;
-        padding-right: 50px;
+        margin-right: 50px;
         -webkit-transition: all 0.5s linear;
         transition: all 0.5s linear;
         -webkit-transform: scale3d(1, 1, 1);
-         transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        @media (max-width: 960px){
+            padding: 0;
+            width: 95%;
+	    }
     }
 
     .project-img, 
@@ -35,7 +39,7 @@
     }
 
     .project-info {
-        padding-left: 50px;
+        padding: 0px 50px;
         margin-bottom: 5px;
         @media (max-width: 960px){
             padding-left: 0;
@@ -101,7 +105,7 @@
 
 // project animation goes here
 
-.arrow {
+.arrow-img {
     opacity: 0;
     width: 40px;
     height: 40px;
@@ -127,7 +131,7 @@
         transform: scale3d(1.05, 1.05, 1);
     }
 
-    .arrow{
+    .arrow-img {
         opacity: 1;
         left: -50px;
     }
@@ -140,7 +144,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 .button-content {
@@ -169,4 +173,5 @@
     // cursor: not-allowed;
     pointer-events: none; 
 }
+
 

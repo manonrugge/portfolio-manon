@@ -10,6 +10,7 @@
     position: relative;
     @media (max-width: 760px){
         flex-direction: column;
+        margin-top: 100px;
 	}
     .about-img {
         width: 40%;

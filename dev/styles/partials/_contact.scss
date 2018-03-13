@@ -6,7 +6,10 @@
 .contact {
     display: flex;
     flex-direction: row;
-    padding: 100px 0px 50px 0px;
+    padding: 100px 0px 100px 0px;
+    a:hover {
+        border-bottom: 2px solid black;
+    }
     @media (max-width: 960px){
         flex-direction: column;
 	}

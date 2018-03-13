@@ -36,7 +36,6 @@
 .flickity-page-dots {
   visibility: hidden;
 }
-
 .flickity-prev-next-button {
   background: none;
 }
@@ -47,18 +46,20 @@
 /* arrow color */
 .flickity-prev-next-button .arrow {
   fill: black;
-  z-index: 999;
+  width: 15px;
+  height: 15px;
 }
 
 /* position outside */
 .flickity-prev-next-button.previous {
-  left: -60px;
+  left: -50px;
+
   @media (max-width: 960px){
     left: -30px;
   }
 }
 .flickity-prev-next-button.next {
-  right: -60px;
+  right: -50px;
   @media (max-width: 960px){
     right: -30px;
   }

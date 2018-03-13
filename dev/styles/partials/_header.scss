@@ -1,13 +1,28 @@
 header {
 	background-color: $background;
 	height: 100vh;
-	// @media (max-width: 560px){
-	// 		height: 100%;
-	// 	}
+	position: relative;
+	// z-index: -2;
+	// margin-bottom: 100px;
+	@media (max-width: 560px){
+			height: 100%;
+		}
 }
 
+ 
+// .color-surface {
+// 	width: 350px;
+// 	height: 600px;
+// 	background-color: $blue;
+// 	position: absolute;
+// 	top: 10%;
+// 	left: 60%;
+// 	z-index: -10;
+	
+// }
+
 .header-intro {
-	padding: 150px 0px;
+	padding: 100px 0px;
 	width: 80%;
 	line-height: 55px;
 	@media (max-width: 960px){
@@ -28,6 +43,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
+	
 	top: 85%;
 	left: 50%;
 	transform: translate(-85%, -50%);
@@ -36,6 +52,7 @@ header {
 		}
     button {
         border: none;
-        background: none;
+		background: none;
+		
     }
 }
