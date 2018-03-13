@@ -10,10 +10,16 @@ myPortfolio.skills = {
 
 // this function gets fired on page load
 
+let mainOffset = $('.seeMore').on('click', function () {
+    $('html').animate({
+        scrollTop: $('#main-scroll').offset().top
+    }, 1000);
+});
 
-myPortfolio.ActiveMenuOnScroll = function () {
+
+
+myPortfolio.ActiveMenuOnScroll = function() {
    
-    console.log(myPortfolio.ActiveMenuOnScroll);
     const links = $('.side-menu a')
     // console.log(links)
 
@@ -32,6 +38,7 @@ myPortfolio.ActiveMenuOnScroll = function () {
             // console.log(sectionSelector)
 
             // I target the section selector to get the top of the section (set minus the 500)
+            
             let sectionOffset = $(sectionSelector).offset().top
             sectionOffset -= 500
             // console.log(sectionOffset)
@@ -42,8 +49,8 @@ myPortfolio.ActiveMenuOnScroll = function () {
 
             // if the location is bigger then one of the items all the other elements will 
             if (userScrollLocation >= sectionOffset) {
-                $(`.active`).removeClass('active')
-                $(`[href ="${sectionSelector}"]`).addClass('active')
+                $('.active').removeClass('active');
+                $(`[href="${sectionSelector}"]`).addClass('active');
             }
         }
     });
