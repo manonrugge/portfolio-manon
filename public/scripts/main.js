@@ -31,7 +31,7 @@ myPortfolio.ActiveMenuOnScroll = function () {
 
             // we target the section selector to get the top of the section (we set minus the 500)
             var sectionOffset = $(sectionSelector).offset().top;
-            sectionOffset -= 500;
+            sectionOffset -= 200;
             // console.log(sectionOffset)
 
             // variable which stores the userScrollLocation top of the window

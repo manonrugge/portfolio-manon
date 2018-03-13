@@ -11,6 +11,10 @@ body {
 a {
   text-decoration: none; }
 
+ul {
+  list-style-type: none;
+  padding: 0; }
+
 h2 {
   font-size: 80px;
   margin: 0px 0px 50px 0px;
@@ -19,13 +23,20 @@ h2 {
 h3 {
   font-size: 40px;
   margin-top: 0;
-  color: black; }
+  color: #000; }
 
 h4 {
   font-size: 15px; }
 
 p {
   line-height: 30px; }
+
+.copyright {
+  background: white;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 10px 5px;
+  font-size: 12px; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
@@ -167,6 +178,18 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   left: -100px;
   top: 50%;
   z-index: 999; }
+  .side-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .side-menu ul a {
+      margin: 0px 20px 0px 0px;
+      text-transform: uppercase;
+      color: black; }
   @media (max-width: 960px) {
     .side-menu {
       -webkit-transform: rotate(0deg);
@@ -179,21 +202,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
               box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
       width: 100%;
       padding-left: 30px; } }
-
-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  list-style-type: none;
-  padding: 0; }
-  ul a {
-    margin: 0px 20px 0px 0px;
-    text-transform: uppercase;
-    color: black; }
 
 .active {
   border-bottom: 2px solid black; }
@@ -228,25 +236,6 @@ header {
   .seeMore-button button {
     border: none;
     background: none; }
-
-.toggle-portfolio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 100px; }
-  .toggle-portfolio h4 {
-    margin: 0;
-    padding: 0px 20px; }
-    .toggle-portfolio h4:last-child {
-      margin-right: 0;
-      border-left: 1px solid black; }
 
 .projects {
   display: -webkit-box;
@@ -304,6 +293,14 @@ header {
     .project-item ul li {
       padding: 0px 20px 0px 0px;
       font-size: 14px; }
+  .project-item .project-tags ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
   .project-item .project-links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -368,14 +365,36 @@ header {
   opacity: 1;
   left: -50px; }
 
+.toggle-portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px; }
+
+.button-content {
+  background-color: #fff;
+  border: none;
+  opacity: 1; }
+  .button-content:last-child {
+    border-left: 1px solid black; }
+  .button-content h4 {
+    margin: 0;
+    padding: 0px 20px; }
+  .button-content:hover {
+    color: #1352a2; }
+
 .hidden {
   display: none; }
 
-.graphic {
-  border: 1px solid #ff00ff; }
-
 .disabled {
-  background-color: red;
+  opacity: 0.5;
   pointer-events: none; }
 
 .about {
@@ -486,18 +505,19 @@ header {
 .flickity-prev-next-button.next {
   right: -60px; }
 
-footer {
-  background-color: #ffd464; }
+.contact-container {
+  background-color: #ffd464;
+  margin-top: 100px; }
 
 .contact {
-  padding: 100px 0px 50px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  padding: 100px 0px 50px 0px; }
   @media (max-width: 960px) {
     .contact {
       -webkit-box-orient: vertical;
@@ -542,10 +562,3 @@ footer {
   border-top: 2px solid black;
   padding-top: 20px;
   line-height: 25px; }
-
-.copyright {
-  background: white;
-  margin-bottom: 0;
-  text-align: center;
-  padding: 10px 5px;
-  font-size: 12px; }

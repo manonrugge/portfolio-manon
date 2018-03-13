@@ -1,9 +1,9 @@
 $primary: #fff;
-$secondary: black;
+$secondary: #000;
 $blue: rgba(19, 82, 162, 1);
 $background: rgba(255, 212, 100, 1);
-$heading: 'Apercu', sans-serif;
-$body: 'Apercu', sans-serif;
+$font: 'Apercu', sans-serif;
+
 
 .wrapper {
 	max-width: 900px;
@@ -17,11 +17,16 @@ $body: 'Apercu', sans-serif;
 }
 
 body {
-	font-family: $heading;
+	font-family: $font;
 }
 
 a {
 	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
 }
 
 h2 {
@@ -45,10 +50,18 @@ p {
 	line-height: 30px;
 }
 
+.copyright {
+    background: white;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 12px;
+}
+
 @import "partials/setup.scss";
 @import "partials/nav.scss";
 @import "partials/header.scss";
 @import "partials/projects.scss";
 @import "partials/about.scss";
 @import "partials/slider.scss";
-@import "partials/footer.scss";
+@import "partials/contact.scss";
