@@ -1,16 +1,25 @@
 header {
 	background-color: $background;
 	height: 100vh;
+	// @media (max-width: 560px){
+	// 		height: 100%;
+	// 	}
 }
 
 .header-intro {
 	padding: 150px 0px;
 	width: 80%;
+	line-height: 55px;
+	@media (max-width: 960px){
+			padding: 75px 0px;
+			width: 100%;
+		}
     h3 {
-        padding-left: 100px;
+		padding-left: 100px;
+		
 		@media (max-width: 960px){
 			padding-left: 0;
-			font-size: 30px;
+			
 		}
 	}
 }
@@ -22,6 +31,9 @@ header {
 	top: 85%;
 	left: 50%;
 	transform: translate(-85%, -50%);
+	@media (max-width: 480px){
+			display: none;
+		}
     button {
         border: none;
         background: none;

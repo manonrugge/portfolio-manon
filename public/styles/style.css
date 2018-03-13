@@ -9,7 +9,8 @@ body {
   font-family: "apercu-regular", sans-serif; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: black; }
 
 ul {
   list-style-type: none;
@@ -36,7 +37,11 @@ p {
   margin-bottom: 0;
   text-align: center;
   padding: 10px 5px;
-  font-size: 12px; }
+  font-size: 12px;
+  line-height: 20px; }
+  @media (max-width: 360px) {
+    .copyright {
+      padding: 10px 50px; } }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
@@ -201,7 +206,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
       -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
               box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
       width: 100%;
-      padding-left: 30px; } }
+      padding-left: 25px;
+      font-size: 14px; } }
 
 .active {
   border-bottom: 2px solid black; }
@@ -212,13 +218,17 @@ header {
 
 .header-intro {
   padding: 150px 0px;
-  width: 80%; }
+  width: 80%;
+  line-height: 55px; }
+  @media (max-width: 960px) {
+    .header-intro {
+      padding: 75px 0px;
+      width: 100%; } }
   .header-intro h3 {
     padding-left: 100px; }
     @media (max-width: 960px) {
       .header-intro h3 {
-        padding-left: 0;
-        font-size: 30px; } }
+        padding-left: 0; } }
 
 .seeMore-button {
   display: -webkit-box;
@@ -233,6 +243,9 @@ header {
   left: 50%;
   -webkit-transform: translate(-85%, -50%);
           transform: translate(-85%, -50%); }
+  @media (max-width: 480px) {
+    .seeMore-button {
+      display: none; } }
   .seeMore-button button {
     border: none;
     background: none; }
@@ -282,7 +295,8 @@ header {
       .project-item .project-info {
         width: 95%; } }
   .project-item .project-info {
-    padding-left: 50px; }
+    padding-left: 50px;
+    margin-bottom: 5px; }
     @media (max-width: 960px) {
       .project-item .project-info {
         padding-left: 0;
@@ -501,9 +515,15 @@ header {
 /* position outside */
 .flickity-prev-next-button.previous {
   left: -60px; }
+  @media (max-width: 960px) {
+    .flickity-prev-next-button.previous {
+      left: -30px; } }
 
 .flickity-prev-next-button.next {
   right: -60px; }
+  @media (max-width: 960px) {
+    .flickity-prev-next-button.next {
+      right: -30px; } }
 
 .contact-container {
   background-color: #ffd464;

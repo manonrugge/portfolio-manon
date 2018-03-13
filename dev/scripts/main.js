@@ -13,6 +13,7 @@ myPortfolio.skills = {
 
 myPortfolio.ActiveMenuOnScroll = function () {
    
+    console.log(myPortfolio.ActiveMenuOnScroll);
     const links = $('.side-menu a')
     // console.log(links)
 
@@ -23,30 +24,30 @@ myPortfolio.ActiveMenuOnScroll = function () {
     // when scroll callback function gets fired on the page.
     $(window).scroll(function () {
 
-        // loop through the array which contains all my links
+        // I loop through the array which contains all my links
         for (let index = 0; index < links.length; index++) {
 
-            // we get the attr href to target every section
-            const sectionSelector = $(links[index]).attr('href');
+            // I get the attr href to target every section
+            const sectionSelector = $(links[index]).attr('href')
             // console.log(sectionSelector)
 
-            // we target the section selector to get the top of the section (we set minus the 500)
-            let sectionOffset = $(sectionSelector).offset().top;
-            sectionOffset -= 200;
+            // I target the section selector to get the top of the section (set minus the 500)
+            let sectionOffset = $(sectionSelector).offset().top
+            sectionOffset -= 500
             // console.log(sectionOffset)
 
             // variable which stores the userScrollLocation top of the window
-            const userScrollLocation = $(window).scrollTop();
+            const userScrollLocation = $(window).scrollTop()
             // console.log(scroll)
 
-            // if the location is bigger then one of the items allt he other elements will 
+            // if the location is bigger then one of the items all the other elements will 
             if (userScrollLocation >= sectionOffset) {
                 $(`.active`).removeClass('active')
                 $(`[href ="${sectionSelector}"]`).addClass('active')
             }
         }
-    })
-}
+    });
+};
 
 myPortfolio.sectionToggleDisplay =  function() {
    
