@@ -32,6 +32,11 @@ h4 {
 p {
   line-height: 30px; }
 
+textarea:focus,
+input:focus,
+button:focus {
+  outline: none !important; }
+
 .copyright {
   background: white;
   margin-bottom: 0;
@@ -233,7 +238,8 @@ header {
     @media (max-width: 960px) {
       .header-intro h3 {
         padding-left: 0;
-        font-size: 35px; } }
+        font-size: 35px;
+        line-height: 45px; } }
 
 .seeMore-button {
   display: -webkit-box;
@@ -604,7 +610,10 @@ header {
     .contact-text {
       width: 100%; } }
   .contact-text p {
-    margin: 10px 0px; }
+    margin: 0; }
+
+.mail {
+  margin-bottom: 15px; }
 
 .social-media,
 .contact-text {

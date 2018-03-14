@@ -46,6 +46,13 @@ p {
 	line-height: 30px;
 }
 
+textarea:focus, 
+input:focus,
+button:focus {
+    outline: none !important;
+}
+
+
 .copyright {
     background: white;
     margin-bottom: 0;
