@@ -6,7 +6,6 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Manon Rugge | Web Developer & Designer | Portfolio</title>
 		<link rel="icon" type="image/png" href="./public/assets/favicon.ico">
-		<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
 		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 		<link rel="stylesheet" href="./public/styles/style.css">
 	</head>
@@ -38,10 +37,6 @@
 					<h3>I am Manon, a Dutch Front-End Web Developer focused on delivering high quality and creative technical solutions.</h3>
 				</div>
 
-				<div class="color-surface">
-					<img src="" alt="">
-				</div>
-
 				<div class="seeMore-button">
 					<p>See More</p>
 					<button class="seeMore">
@@ -54,12 +49,15 @@
 		</header>
 
 		<!-- === Page main content goes here === -->
+
 		<main>
 			
 			<section id="main-scroll" class="toggle-portfolio">
 					<button class="button-content disabled"><h4>Front-End Web Development</h4></button>
 					<button class="button-content"><h4>Graphic Design</h4></button>
 			</section>
+
+			<!-- === Projects items go here === -->
 
 			<section class="projects webDev" id="projects">
 
@@ -91,15 +89,10 @@
 						<div class="project-links project1" onmouseover="myPortfolio.addClass('project1')" onmouseout="myPortfolio.removeClass('project1')">
 
 							<a href="http://www.manonrugge.nl/stamppot/" target="_blank">
-								<img class="arrow-img" src="./public/assets/arrow-left.svg" alt="">
+								<img class="arrow-img arrow-rotate" src="./public/assets/arrow-left.svg" alt="">
 								<span class="arrow-text">View Live</span>
 							</a>
-				
-							<!-- <a href="https://github.com/manonrugge/stampot-recipe-app" target="_blank">
-								<img class="arrow" src="./public/assets/arrow-left.svg" alt="icon of an arrow left">
-								<span class="arrow-text">View on Github</span>
-							</a> -->
-
+		
 						</div>
 					</div>
 				</div>
@@ -109,12 +102,13 @@
 				<div class="project-item right">
 
 					<div class="project-info">
+
 						<div class="project-title">
 							<h3>House Of Plants App</h3>
 						</div>
+
 						<div class="project-text">
-							<p>This notes app is useful for when you see a plant you like, lost a plant’s name card, or you straight up forgot what plant
-								you bought and don’t know how to take care of it.</p>
+							<p>This notes app is useful for when you see a plant you like, lost a plant’s name card, or you straight up forgot what plant you bought and don’t know how to take care of it.</p>
 						</div>
 						<div class="project-tags">
 							<ul>
@@ -132,11 +126,7 @@
 								<img class="arrow-img" src="./public/assets/arrow-right.svg" alt="icon of an arrow right">
 								<span class="arrow-text">View Live</span>
 							</a>
-			
-							<!-- <a href="https://github.com/manonrugge/project_5" target="_blank">
-								<img class="arrow" src="./public/assets/arrow-right.svg" alt="icon of an arrow right">
-								<span class="arrow-text">View on Github</span>
-							</a> -->
+
 						</div>
 			
 					</div>
@@ -144,19 +134,22 @@
 					<div class="project-img project2" onmouseover="myPortfolio.addClass('project2')" onmouseout="myPortfolio.removeClass('project2')">
 						<img class="projectImg" src="./public/assets/item-02.jpg" alt="project overview plants note app">
 					</div>
-				
 				</div>
 
 			</section>
 
 			<section class="projects graphic hidden">
-			
+				
+				<!-- Graphic design projects go here -->
+
 				<!-- Project 1 goes here -->
 			
 				<div class="project-item">
+
 					<div class="project-img project1" onmouseover="myPortfolio.addClass('project1')" onmouseout="myPortfolio.removeClass('project1')">
 						<img class="projectImg" src="./public/assets/hosteldurres.jpg" alt="project overview of Hostel Durres Identity">
 					</div>
+
 					<div class="project-info">
 						<div class="project-title">
 							<h3>Hostel Durres</h3>
@@ -172,7 +165,7 @@
 						</div>
 						<div class="project-links project1" onmouseover="myPortfolio.addClass('project1')" onmouseout="myPortfolio.removeClass('project1')">
 							<a href="">
-								<img class="arrow-img" src="./public/assets/arrow-left.svg" alt="icon of an arrow left">
+								<img class="arrow-img arrow-rotate" src="./public/assets/arrow-left.svg" alt="icon of an arrow left">
 								<span class="arrow-text">See This Project</span>
 							</a>
 						</div>
@@ -180,14 +173,17 @@
 				</div>
 			
 				<!-- Project 2 goes here -->
-				
+				 
 				<div class="project-item right">
+				
 					<div class="project-info">
+				
 						<div class="project-title">
 							<h3>Anne Yoga</h3>
 						</div>
+				
 						<div class="project-text">
-							<p>Identity created for Anne Baan Hofman,  she is a yoga instructor who is teaching yoga with a dynamic and centered approach in Montreal, Canada.</p>
+							<p>Identity created for Anne Baan Hofman, a yoga instructor who is teaching yoga with a dynamic and centered approach in Montreal, Canada.</p>
 						</div>
 						<div class="project-tags">
 							<ul>
@@ -195,140 +191,156 @@
 								<li>Photography</li>
 							</ul>
 						</div>
+				
 						<div class="project-links project2" onmouseover="myPortfolio.addClass('project2')" onmouseout="myPortfolio.removeClass('project2')">
-							<a href="">
+				
+							<a href="" target="_blank">
 								<img class="arrow-img" src="./public/assets/arrow-right.svg" alt="icon of an arrow right">
 								<span class="arrow-text">See This Project</span>
 							</a>
+				
 						</div>
+				
 					</div>
+				
 					<div class="project-img project2" onmouseover="myPortfolio.addClass('project2')" onmouseout="myPortfolio.removeClass('project2')">
-						<img class="projectImg" src="./public/assets/anneyoga.jpg" alt="project overview Anne yoga identity">
+						<img class="projectImg" src="./public/assets/anneyoga.jpg" alt="project overview plants note app">
 					</div>
 				</div>
 			
 				<!-- Project 3 goes here -->
 				
 				<div class="project-item">
+				
 					<div class="project-img project1" onmouseover="myPortfolio.addClass('project1')" onmouseout="myPortfolio.removeClass('project1')">
-						<img class="projectImg" src="./public/assets/tulla.jpg" alt="">
+						<img class="projectImg" src="./public/assets/KAART2.jpg" alt="project overview of Hostel Durres Identity">
 					</div>
+				
 					<div class="project-info">
 						<div class="project-title">
-							<h3>Project</h3>
+							<h3>The Guide - Tirana</h3>
 						</div>
 						<div class="project-text">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ullam aspernatur saepe, molestias neque ipsam itaque minus,
-								nulla ut adipisci modi hic aliquid et.</p>
+							<p>For Tirana Backpacker Hostel I created a map to guide their guest through this lively and colourful city!</p>
 						</div>
 						<div class="project-tags">
 							<ul>
-								<li>HTML</li>
-								<li>CSS</li>
-								<li>Sass</li>
-								<li>JavaScript</li>
+								<li>Product</li>
+								<li>Illustration</li>
 							</ul>
 						</div>
 						<div class="project-links project1" onmouseover="myPortfolio.addClass('project1')" onmouseout="myPortfolio.removeClass('project1')">
 							<a href="">
-								<img class="arrow-img" src="./public/assets/arrow-left.svg" alt="">
-								<span class="arrow-text">View Live</span>
+								<img class="arrow-img arrow-rotate" src="./public/assets/arrow-left.svg" alt="icon of an arrow left">
+								<span class="arrow-text">See This Project</span>
 							</a>
-							<a href="">View on Github</a>
 						</div>
 					</div>
 				</div>
 				
 				<!-- Project 4 goes here -->
-
+				
 				<div class="project-item right">
+				
 					<div class="project-info">
+				
 						<div class="project-title">
-							<h3>Project</h3>
+							<h3>Book Quotes</h3>
 						</div>
+				
 						<div class="project-text">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ullam aspernatur saepe, molestias neque ipsam itaque minus,
-								nulla ut adipisci modi hic aliquid et.</p>
+							<p>Colourful greeting cards featuring a literary quote from inspiring authors. Visit my <a class="etsy" href="https://www.etsy.com/shop/buntyandbianco" target="_blank">Etsy Shop</a>!</p>
 						</div>
 						<div class="project-tags">
 							<ul>
-								<li>HTML</li>
-								<li>CSS</li>
-								<li>Sass</li>
-								<li>JavaScript</li>
+								<li>Product</li>
+								<li>Illustration</li>
 							</ul>
 						</div>
+				
 						<div class="project-links project2" onmouseover="myPortfolio.addClass('project2')" onmouseout="myPortfolio.removeClass('project2')">
-							<a href="">View Live</a>
-							<a href="">View on Github</a>
+				
+							<a href="" target="_blank">
+								<img class="arrow-img" src="./public/assets/arrow-right.svg" alt="icon of an arrow right">
+								<span class="arrow-text">See This Project</span>
+							</a>
+				
 						</div>
+				
 					</div>
+				
 					<div class="project-img project2" onmouseover="myPortfolio.addClass('project2')" onmouseout="myPortfolio.removeClass('project2')">
-						<img class="projectImg" src="./public/assets/kaart.jpg" alt="">
+						<img class="projectImg" src="./public/assets/kaart.jpg" alt="project overview plants note app">
 					</div>
 				</div>
+				
 
 				<!-- Project 5 goes here -->
 				
 				<div class="project-item">
+				
 					<div class="project-img project1" onmouseover="myPortfolio.addClass('project1')" onmouseout="myPortfolio.removeClass('project1')">
-						<img class="projectImg" src="./public/assets/KAART2.jpg" alt="">
+						<img class="projectImg" src="./public/assets/fles.jpg" alt="project overview of Hostel Durres Identity">
 					</div>
+				
 					<div class="project-info">
 						<div class="project-title">
-							<h3>Project</h3>
+							<h3>Help Wanted!</h3>
 						</div>
 						<div class="project-text">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ullam aspernatur saepe, molestias neque ipsam itaque minus,
-								nulla ut adipisci modi hic aliquid et.</p>
+							<p>I portrayed the characteristics of cleaning products in a series of photographs.</p>
 						</div>
 						<div class="project-tags">
 							<ul>
-								<li>HTML</li>
-								<li>CSS</li>
-								<li>Sass</li>
-								<li>JavaScript</li>
+								<li>Photography</li>
 							</ul>
 						</div>
 						<div class="project-links project1" onmouseover="myPortfolio.addClass('project1')" onmouseout="myPortfolio.removeClass('project1')">
 							<a href="">
-								<img class="arrow-img" src="./public/assets/arrow-left.svg" alt="">
-								<span class="arrow-text">View Live</span>
+								<img class="arrow-img arrow-rotate" src="./public/assets/arrow-left.svg" alt="icon of an arrow left">
+								<span class="arrow-text">See This Project</span>
 							</a>
-							<a href="">View on Github</a>
 						</div>
 					</div>
 				</div>
 				
-				<!-- Project 4 goes here -->
+				<!-- Project 6 goes here -->
 				
 				<div class="project-item right">
+				
 					<div class="project-info">
+				
 						<div class="project-title">
-							<h3>Project</h3>
+							<h3>Tulla</h3>
 						</div>
+				
 						<div class="project-text">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ullam aspernatur saepe, molestias neque ipsam itaque minus,
-								nulla ut adipisci modi hic aliquid et.</p>
+							<p>Identity created for Tulla Culture Center, a music venue located in Tirana, Albania.</p>
 						</div>
 						<div class="project-tags">
 							<ul>
-								<li>HTML</li>
-								<li>CSS</li>
-								<li>Sass</li>
-								<li>JavaScript</li>
+								<li>Identity</li>
+								<li>Photography</li>
+								<li>Illustration</li>
 							</ul>
 						</div>
+				
 						<div class="project-links project2" onmouseover="myPortfolio.addClass('project2')" onmouseout="myPortfolio.removeClass('project2')">
-							<a href="">View Live</a>
-							<a href="">View on Github</a>
+				
+							<a href="" target="_blank">
+								<img class="arrow-img" src="./public/assets/arrow-right.svg" alt="icon of an arrow right">
+								<span class="arrow-text">See This Project</span>
+							</a>
+				
 						</div>
+				
 					</div>
+				
 					<div class="project-img project2" onmouseover="myPortfolio.addClass('project2')" onmouseout="myPortfolio.removeClass('project2')">
-						<img class="projectImg" src="./public/assets/fles.jpg" alt="">
+						<img class="projectImg" src="./public/assets/kaart.jpg" alt="project overview plants note app">
 					</div>
 				</div>
-			
+				
 			</section>
 
 			<section class="about" id="about">
@@ -339,11 +351,9 @@
 						</div>
 						<div class="about-text">
 							<h2>About</br> Me</h2>
-							<p>I am Manon, a Front-End Web Developer based in Toronto. I started a nine-week bootcamp program at HackerYou in January. My
-							background is in Graphic Design and learning how languages and libraries such as HTML, CSS, JavaScript, and React are used
+							<p>I am Manon, a Front-End Web Developer based in Toronto. I finished a nine-week bootcamp program at HackerYou in March 2018. My background is in Graphic Design and learning how languages and libraries such as HTML, CSS, JavaScript, and React are used
 							to build the websites I designed is very exciting! </p>
-							<p>As a designer, I solve problems and organise information, as a Front-End Web Developer I do just that but with code instead
-							of visuals! The challenge of putting all the pieces together is what makes me excited about being a Front-End-Web Developer
+							<p>The challenge of putting all the pieces together is what makes me excited about being a Front-End-Web Developer
 							and I look forward to solving a lot more of these puzzles, whilst combining my Graphic Design with my coding skills, and
 							getting inspired by the development community here in Toronto.</p>
 						</div>
@@ -381,9 +391,6 @@
 							<li>
 								<a href="https://medium.com/@manonrugge">Medium</a>
 							</li>
-							<!-- <li>
-								<a href="https://github.com/manonrugge">Github</a>
-							</li> -->
 							<li>
 								<a href="https://www.instagram.com/manon_rugge/">Instagram</a>
 							</li>
@@ -394,7 +401,7 @@
 							<a href="mailto:info@manonrugge.nl">info@manonrugge.nl</a>
 						</div>
 						<div>
-							<p>Make sure to check out my code on
+							<p>Don't forget to check out my code on
 								<a href="https://github.com/manonrugge">Github!</a>
 							</p>
 						</div>
