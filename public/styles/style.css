@@ -505,7 +505,6 @@ header {
   margin-top: 100px; }
 
 .main-carousel {
-  background: #FAFAFA;
   width: 100%; }
   @media (max-width: 480px) {
     .main-carousel {
@@ -513,9 +512,9 @@ header {
       margin: 0 auto; } }
 
 .carousel-cell {
-  width: 25%;
+  width: calc(25% - 20px);
   height: 200px;
-  margin-right: 20px;
+  margin: 0px 10px;
   border: 2px solid black;
   line-height: 200px;
   font-size: 30px;
@@ -523,14 +522,14 @@ header {
   text-align: center; }
   @media (max-width: 960px) {
     .carousel-cell {
-      width: 33.33%;
+      width: calc(33.33% - 20px);
       font-size: 25px; } }
   @media (max-width: 780px) {
     .carousel-cell {
-      width: 50%; } }
+      width: calc(50% - 20px); } }
   @media (max-width: 480px) {
     .carousel-cell {
-      width: 100%;
+      width: calc(100% - 20px);
       font-size: 20px; } }
 
 .flickity-page-dots {
